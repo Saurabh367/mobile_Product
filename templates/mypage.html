@@ -1,0 +1,20 @@
+ {% extends 'head.html' %}
+
+
+{% block title %}Products Form{% endblock title %}
+
+{% block body %}
+<center>
+    <h3>Input Data</h3>
+    <form action="../mypage/" method="post">
+        {% csrf_token %}
+        First Name<input type="text" name="fn"><br>
+        Last Name<input type="text" name="ln"><br>
+
+        <input type="submit">
+
+
+<a href="http://127.0.0.1:8000/myapp1/show">show</a>
+    </form>
+</center>
+ {% endblock body %}
